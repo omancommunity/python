@@ -1,4 +1,6 @@
 """
+
+
 Short tutorial & notes starting from
 split directory, you can navigate and
 learn from that; or run this script and
@@ -7,11 +9,30 @@ You can do whatever you want this for passing and learn
 and study python .
 
 
+Still project started in 1/5/2020 and you are more than welcome
+to add fix and modify what are think it is good practice and handy to learn
+keep sharing and separate love over the world .
+
 """
 
-
-
+import os
 global is_active
+
+
+
+
+HOME_DIR = os.path.expanduser("~")
+DIRE_PATH = HOME_DIR + "/PycharmProjects/python/"
+# for me it will be
+# DIRE_PATH = HOME_DIR + "/PycharmProjects/python/"
+
+
+# If you're on Python 3.5+ you can use pathlib.Path.home():
+# from pathlib import Path
+# HOME_DIR = str(Path.home())
+# https://stackoverflow.com/questions/4028904/how-to-get-the-home-directory-in-python
+
+
 
 
 def _make_text_bold(bold_msg) -> str:
@@ -44,15 +65,22 @@ def _play_thing() -> object:
     # use [with] and try to [catch any error] will raise finally [clean your room]
     # when you wake up don't just open things without closing,
     # [close the file]
-
+    tag = None
     try:
-        with open("tag.txt","r") as f:
+        # make sure to add Directory  PATH to tag.txt file
+        with open(DIRE_PATH +"tag.txt","r") as f:
             tag = "".join(f.readlines())
+            f.close()
     except Exception as err:
         print(err)
-    finally:
-        f.close()
-    print('\n\n\n' +u'\u001b[46;1m'+tag+ '\n\n\n\n'+ u'\u001b[0m'+ '\n\n\n')
+
+
+    if tag is not None:
+        print('\n\n\n' +u'\u001b[46;1m'+tag+ '\n\n\n\n'+ u'\u001b[0m'+ '\n\n\n')
+    else:
+        print("There was an error with reading tag.txt file"
+              " please make sure you enter correct path directory "
+              "to this project .")
     return _menu_and_friends()
 
 
