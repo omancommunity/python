@@ -1,7 +1,3 @@
-# python
-Learning, tutorials, papers, thoughts
-
-
 
 
 
@@ -25,25 +21,3 @@ Learning, tutorials, papers, thoughts
   ███        ███   ███     ███       ███    ███   ███    ███ ███   ███        ███    ███ ███    ███   ███    ███ ███   ▄███      ███   ███   ███   ███    ███   ███
  ▄████▀       ▀█████▀     ▄████▀     ███    █▀     ▀██████▀   ▀█   █▀         ███    ███  ▀██████▀    ███    █▀  ████████▀        ▀█   ███   █▀    ███    █▀   ▄████▀
                                                                               ███    ███
-
-
-
-
-
-
-
-                    [ Please select  option from list ]                    
-
-         [ Which path you want to start 1 , 2, 3, 4, 5 : ]                      
-
- > [ 1 ] Short introduction, python ?
-
- > [ 2 ]  Scraping web pages using python ?
-
- > [ 3 ]  Python core and tricks! 
-
- > [ 4 ]  Examples & short notes
-
- > [ 5 ]  Exit 
-
-:
