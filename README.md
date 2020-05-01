@@ -1,8 +1,10 @@
-# python
+# Python
 
 
-> Learning, tutorials, papers, thoughts
+> what's inside ?
 
+
+This gift box still under development ....
 
 
 
@@ -13,3 +15,11 @@ all material there for learn and study ,do what you want with code .
 
 
 ![](something.gif)
+
+
+
+start ```script``` by run :
+```bash
+python3 app.py
+```
+
