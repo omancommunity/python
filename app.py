@@ -14,6 +14,22 @@ and study python .
 global is_active
 
 
+def _make_text_bold(bold_msg) -> str:
+    """
+    Return bold_msg text with added decoration using ansi code
+    :param msg:
+    :return: u"\u001b[1m"+ bold_msg + u"\u001b[0m"
+    """
+    return u"\u001b[1m"+ bold_msg + u"\u001b[0m"
+
+
+def _make_text_underline(under_line_msg) -> str:
+    """
+    Return under_line_msg text with added decoration using ansi code
+    :param msg:
+    :return: u"\u001b[4m"+ under_line_msg + u"\u001b[0m"
+    """
+    return u"\u001b[4m"+ under_line_msg + u"\u001b[0m"
 
 
 
@@ -24,8 +40,18 @@ def _play_thing() -> object:
     :return: _menu_and_friends()
     """
 
-    f  = open("tag.txt","r")
-    tag = "".join(f.readlines())
+    # Make sure when you open a file select correct permission
+    # use [with] and try to [catch any error] will raise finally [clean your room]
+    # when you wake up don't just open things without closing,
+    # [close the file]
+
+    try:
+        with open("tag.txt","r") as f:
+            tag = "".join(f.readlines())
+    except Exception as err:
+        print(err)
+    finally:
+        f.close()
     print('\n\n\n' +u'\u001b[46;1m'+tag+ '\n\n\n\n'+ u'\u001b[0m'+ '\n\n\n')
     return _menu_and_friends()
 
@@ -37,13 +63,30 @@ def _menu_and_friends() -> bool:
     """
     select = 0
     is_active = True
-    print('                   ' + u'\u001b[42m [ Please select  option from list ]  '+u'\u001b[0m'+ '                  \n')
-    print("    " + u"\u001b[32;1m     [ Which path you want to start 1 , 2, 3, 4, 5 : ]    "+u'\u001b[0m'+ '                  \n')
-    print(u'\u001b[32;1m > [ 1 ]'+ u'\u001b[0m' +" Short introduction, python ?"+ "\n")
-    print(u'\u001b[32;1m > [ 2 ] '+ u'\u001b[0m' +" Scraping web pages using python ?" +"\n")
-    print(u'\u001b[32;1m > [ 3 ] '+ u'\u001b[0m' +" Python core and tricks! " +"\n")
-    print(u'\u001b[32;1m > [ 4 ] '+ u'\u001b[0m' +" Examples & short notes" +"\n")
-    print(u'\u001b[32;1m > [ 5 ] '+ u'\u001b[0m' +" Exit \n")
+
+    # make sure if you use ANSI escape codes to change color and things to use reset color code [ u'\u001b[0m' ]
+    # just try to change number and things and figure out which color stable for you , just you
+    # for more information you can visit :
+    # https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html#background-colors
+    """
+    Black: \u001b[30m
+    Red: \u001b[31m
+    Green: \u001b[32m
+    Yellow: \u001b[33m
+    Blue: \u001b[34m
+    Magenta: \u001b[35m
+    Cyan: \u001b[36m
+    White: \u001b[37m
+    Reset: \u001b[0m
+    """
+
+    print('                   ' + u'\u001b[42m' + _make_text_bold("[ Please select  option from list ]")+u'\u001b[0m'+ '                  \n')
+    print("    " + u"\u001b[32;1m   \u001b[1m  [ Which path you want to start 1 , 2, 3, 4, 5 : ]    "+u'\u001b[0m'+ '                  \n')
+    print(u'\u001b[32;1m > [ 1 ]'+ u'\u001b[0m' +_make_text_underline(" Short introduction, python ?")+ "\n")
+    print(u'\u001b[32;1m > [ 2 ] '+ u'\u001b[0m' +_make_text_underline(" Scraping web pages using python ?") +"\n")
+    print(u'\u001b[32;1m > [ 3 ] '+ u'\u001b[0m' +_make_text_underline(" Python core and tricks! ") +"\n")
+    print(u'\u001b[32;1m > [ 4 ] '+ u'\u001b[0m' +_make_text_underline(" Examples & short notes") +"\n")
+    print(u'\u001b[32;1m > [ 5 ] '+ u'\u001b[0m' +_make_text_underline(" Exit \n"))
     select = input(": ")
 
     while is_active:
