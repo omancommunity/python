@@ -1,6 +1,4 @@
 """
-
-
 Short tutorial & notes starting from
 split directory, you can navigate and
 learn from that; or run this script and
@@ -8,11 +6,9 @@ go with it step by step .
 You can do whatever you want this for passing and learn
 and study python .
 
-
 Still project started in 1/5/2020 and you are more than welcome
 to add fix and modify what are think it is good practice and handy to learn
 keep sharing and separate love over the world .
-
 """
 
 import os
@@ -21,6 +17,7 @@ global is_active
 
 
 
+# this is work for most operation system
 HOME_DIR = os.path.expanduser("~")
 DIRE_PATH = HOME_DIR + "/PycharmProjects/python/"
 # for me it will be
