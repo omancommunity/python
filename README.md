@@ -1,38 +1,15 @@
 # python
-Learning, tutorials, papers, thoughts
+
+
+> Learning, tutorials, papers, thoughts
 
 
 
 
+to start and play with project tutorial just froke and run app.py script and 
+follow the steps menu by selecting number from 1, 2, 3, 4, 5 .
+
+all material there for learn and study ,do what you want with code .
 
 
-```bash
-echo ";;____;__;;;__;_____;;_;;;_;;;___;;;_;;;_;;;____;;;;___;;;;;_;;;;;____;;;;__;;__;;;;;_;;;;;____;;";
-echo ";|;;_;\\;\;/;/|_;;;_||;|;|;|;/;_;\;|;\;|;|;|;;_;\;;/;_;\;;;/;\;;;|;;_;\;;|;;\/;;|;;;/;\;;;|;;_;\;";
-echo ";|;|_);|\;V;/;;;|;|;;|;|_|;||;|;|;||;;\|;|;|;|_);||;|;|;|;/;_;\;;|;|;|;|;|;|\/|;|;;/;_;\;;|;|_);|";
-echo ";|;;__/;;|;|;;;;|;|;;|;;_;;||;|_|;||;|\;;|;|;;_;<;|;|_|;|/;___;\;|;|_|;|;|;|;;|;|;/;___;\;|;;__/;";
-echo ";|_|;;;;;|_|;;;;|_|;;|_|;|_|;\___/;|_|;\_|;|_|;\_\;\___//_/;;;\_\|____/;;|_|;;|_|/_/;;;\_\|_|;;;;";
-echo ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;";
-```
- 
-                                                                           
-
-
-
-
-
-                    [ Please select  option from list ]                    
-
-         [ Which path you want to start 1 , 2, 3, 4, 5 : ]                      
-
- > [ 1 ] Short introduction, python ?
-
- > [ 2 ]  Scraping web pages using python ?
-
- > [ 3 ]  Python core and tricks! 
-
- > [ 4 ]  Examples & short notes
-
- > [ 5 ]  Exit 
-
-:
+![](something.gif)
