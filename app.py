@@ -8,12 +8,8 @@ and study python .
 
 
 """
-import os
 
 
-# use this for windows. change to os.system("clear") for linux
-# https://gist.github.com/richardbwest/17674f84961e975d47cf106da9728dd2
-# os.system('cls')
 
 global is_active
 
@@ -31,7 +27,6 @@ def _play_thing() -> object:
     f  = open("tag.txt","r")
     tag = "".join(f.readlines())
     print('\n\n\n' +u'\u001b[46;1m'+tag+ '\n\n\n\n'+ u'\u001b[0m'+ '\n\n\n')
-    # print(u'\u001b[35;1m\\u001b[35;1m ou \\033[35;1m Please select  option from list\u001b[0m')
     return _menu_and_friends()
 
 
