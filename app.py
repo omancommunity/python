@@ -19,7 +19,7 @@ global is_active
 
 # this is work for most operation system
 HOME_DIR = os.path.expanduser("~")
-DIRE_PATH = HOME_DIR + "/PycharmProjects/python/"
+DIRE_PATH = HOME_DIR + "/PycharmProjects/python-master/"
 # for me it will be
 # DIRE_PATH = HOME_DIR + "/PycharmProjects/python/"
 
@@ -112,7 +112,7 @@ def _menu_and_friends() -> bool:
     print(u'\u001b[32;1m > [ 3 ] '+ u'\u001b[0m' +_make_text_underline(" Python core and tricks! ") +"\n")
     print(u'\u001b[32;1m > [ 4 ] '+ u'\u001b[0m' +_make_text_underline(" Examples & short notes") +"\n")
     print(u'\u001b[32;1m > [ 5 ] '+ u'\u001b[0m' +_make_text_underline(" Exit \n"))
-    select = input(": ")
+    select = input("Type your numer here: ")
 
     while is_active:
         if int(select) == 1 and is_active:
